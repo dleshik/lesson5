@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const numOrStr = prompt('input number or string');
+         let variant;
+
+        switch (numOrStr) {
+
+            case variant = null: {
+            console.log (`You canceled`);
+                }
+                break;
+       
+            case variant = '': {
+                console.log ('Empty String');
+            }
+                break;
+
+            case !isNaN (numOrStr)|| numOrStr: {
+                console.log ( numOrStr);
+                console.log (`number is Ba_NaN`);
+            }
+                break;
+
+            default: {
+                console.log (numOrStr);
+                console.log (`OK!`); 
+            }
+                break;
+        }
+
+    </script>
+</body>
+</html>
