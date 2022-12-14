@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // -----quest 1-----/
+    let result = '';
+    let i = 10;
+    do {
+        result += i + ', ';
+        i++;
+        
+    } while (i >= 10 && i <= 20);
+    console.log (`1. `,result);
+
+// -----quest 2-----/
+let output = " "; 
+for (let i = 10; i <= 20; i++) {
+    output += (i*i) + ", "; 
+}
+console.log(`2.`,output);
+
+// -----quest 3-----/
+    const number = 7;
+ for (let iterator = 0; iterator <= 10; iterator++) {
+
+console.log (`3.  ${iterator} * ${number} = ${iterator * number}`);
+ }
+
+// -----quest 4-----/
+let sumInt = 0;
+const maxInt = 15;
+
+for (let  a = 1; a <= maxInt; a ++) {
+    sumInt = sumInt + a;  
+}
+console.log(`4. `,sumInt);
+
+// -----quest 5-----/
+let multInt = 15;
+
+for (let  b = 16; b <= 35; b ++) {
+    multInt = multInt * b;  
+}
+console.log(`5. `,multInt);
+
+// -----quest 6-----/
+let sum = 0;
+const max = 500;
+
+for (let i = 1; i<=max; i++) {
+    sum= sum+i;
+}
+console.log (`6. `,sum/max);
+
+// -----quest 7-----/
+
+const maxNum = 80;
+let out = 0;
+for (let  c = 30; c <= maxNum; c ++) {
+    if (c % 2 === 0)
+        out = out + c;  
+    }
+    console.log (`7. `,out);
+
+// -----quest 8-----/
+const numMult = 200;
+let Str = ' ';
+for (let  d = 100; d <= numMult; d ++) {
+    if (d % 3 === 0) {
+     Str += d + ', ';   
+    }
+}
+console.log(`8.`,Str);
+
+// -----quest 9 - 11-----/
+let m = +prompt('Введите число');
+let Dev = ' ';
+let Even = ' ';
+let SumEven =0;
+for (let j = 1; j <= m; j++) {
+    if (m % j === 0){
+        Dev += j + `, `;
+        }
+    if (m % j === 0 &&j%2 === 0) {
+       Even += j + ', ';
+        } 
+        if (m % j === 0 &&j%2 === 0) {
+            SumEven = SumEven+j;
+        } 
+    }
+   
+    console.log (`9. `, Dev);
+    console.log (`10. `, Even);
+    console.log (`11. `, SumEven);
+       
+// -----quest 12-----/
+
+	for (let FirstMult = 1; FirstMult <=10; FirstMult++) {
+        console.log(`multiplication by ${FirstMult}`);
+		for (let SecondMult = 1; SecondMult <=10; SecondMult++) {
+			console.log (`${FirstMult}*${SecondMult} = ${FirstMult * SecondMult}`);   
+		}     
+	} 
+    </script>
+</body>
+</html>
