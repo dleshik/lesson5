@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <body>
+        <script>
+        // ===== decision 1 ====== 
+        let result = '';
+        let i = 20;
+        do {
+            result += i + ', ';
+            i+=0.5;
+            
+        } while (i >= 20 && i <= 30);
+        console.log (`1. `,result);
+
+        // ===== decision 2 ====== 
+
+        let output = " "; 
+        for (let j = 10; j <= 100; j+=10) {
+        output += (j*27) + " UAH, "; 
+        }
+        console.log(`2. `,output);
+
+        // ===== decision 3 ====== 
+        let m = +prompt('input number');
+        let dev = ' ';
+
+        for (let j = 1; j <= m; j++) {
+        if (j*j <= m && j<=100 ){
+            dev += j + ` `;
+            }
+        }
+            console.log (`3. `,dev);
+
+        // ===== decision 4 ====== 
+    
+        let num = +prompt('input number');
+
+        if (num > 1 ) { 
+       
+        for (let i = 3; i < num; i=i+2) {
+            if (num % i == 0 ) {
+                
+             console.log (`4. composit number`) 
+                } 
+        }
+                console.log (`4. easy number`)
+            }  else {    
+        console.log ("4.  enter a number greater than 1") 
+        }  
+
+        // ===== decision 5 ====== 
+        let number = +prompt('input number');
+
+while (number % 3 == 0 && number !==0) {
+    number /= 3;
+}
+console.log((number == 1)? "5.  number can be obtained " : "5.  number cannot be obtained");
+
+    
+
+    </script>
+</body>
+</html>
